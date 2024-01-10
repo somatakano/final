@@ -3,4 +3,4 @@
 ## クラス　　　: SD2E
 ## 氏名　　　　: 髙野　颯馬
 ## システム名　: 酒呑みブログ管理システム
-## URL : 
+## URL : https://aso2201154.boo.jp/final/SRC/top.php
