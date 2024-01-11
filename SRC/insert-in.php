@@ -23,9 +23,10 @@
     <p>おすすめの料理
         <input type="text" name="food">
     </p>
-    <p>画像
-        <input type="text" name="image">
+    <p>感想
+        <input type="text" name="review">
     </p>
+    <p><button type="submit">登録する</button></p>
 </form>
 
 <?php require 'footer.php'; ?>
