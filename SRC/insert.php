@@ -14,7 +14,18 @@
     <p>行った日にち
         <input type="date" name="date">
     </p>
-    <p>カテゴリー</p>
+    <p>カテゴリー
+        <select name="category">
+            <option value="1">居酒屋</option>
+            <option value="2">和食</option>
+        </select>
+    </p>
+    <p>おすすめの料理
+        <input type="text" name="food">
+    </p>
+    <p>画像
+        <input type="text" name="image">
+    </p>
 </form>
 
 <?php require 'footer.php'; ?>
