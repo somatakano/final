@@ -1,5 +1,6 @@
 <?php session_start() ?>
 <?php require 'header.php'; ?>
+<?php require 'db-connect.php'; ?>
 
 <form action="insert-out.php" method="post">
     <p>店名
@@ -15,10 +16,16 @@
         <input type="date" name="date">
     </p>
     <p>カテゴリー
-        <select name="category">
-            <option value="1">居酒屋</option>
-            <option value="2">和食</option>
-        </select>
+        <?php
+        $pdo = new PDO($connect , user , pass);
+        echo '<select name="category">';
+        echo '<option hidden>カテゴリーを選択</option>';
+        foreach($pdo->query('select * from category') as $row){
+            echo '<option value="' , $row['category_id'] ,'">', $row['category_name'] ,'</option>';
+        }
+        echo '</select>';
+        ?>
+        <a href="category-in.php">カテゴリーを追加</a>
     </p>
     <p>おすすめの料理
         <input type="text" name="food">
