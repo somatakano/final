@@ -34,6 +34,7 @@
         <input type="text" name="review">
     </p>
     <p><button type="submit">登録する</button></p>
+    <p><a href="top.php">トップページへ</a></p>
 </form>
 
 <?php require 'footer.php'; ?>
