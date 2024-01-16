@@ -7,5 +7,6 @@
     </head>
     <body>
         <div class="header">
-        <h1>酒吞みブログ</h1>
+            <h1>酒吞みブログ</h1>
+            <button class="insert-button" onclick="location.href='insert-in.php'">お店を登録</button>
         </div>

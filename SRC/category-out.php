@@ -6,11 +6,11 @@
 $pdo = new PDO($connect , user , pass);
 $sql = $pdo->prepare('insert into category values ( null , ? )');
 
-$check = $pdo->prepare('select count(*) from category where category_name = ? ');
+$check = $pdo->prepare('select * from category where category_name = ? ');
 $check->execute([$_POST['category_name']]);
+$count = $check->rowCount();
 
-////////////////////
-if($check != 0){
+if($count > 0){
     echo '<p>カテゴリー名は既に登録済みです</p>';
 }else{
     $sql->execute([$_POST['category_name']]);

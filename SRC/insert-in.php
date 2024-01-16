@@ -10,7 +10,7 @@
         <input type="text" name="address">
     </p>
     <p>画像
-        <input type="text" name="image">
+        <input type="file" name="image">
     </p>
     <p>行った日にち
         <input type="date" name="date">
