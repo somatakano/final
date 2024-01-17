@@ -30,9 +30,9 @@
     <p>おすすめの料理
         <input type="text" name="food">
     </p>
-    <p>感想
-        <input type="text" name="review">
-    </p>
+    <!-- 感想 -->
+    <p><textarea name="review" placeholder="レビュー" cols="50" rows="4" maxlength="200"></textarea></p>
+
     <p><button type="submit">登録する</button></p>
     <p><a href="top.php">トップページへ</a></p>
 </form>

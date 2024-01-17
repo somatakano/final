@@ -16,7 +16,8 @@ foreach( $sql as $row){
     echo '<div class="category">', $row['category_name'] ,'</div>';
     echo '<div class="food-name">', $row['food_name'] ,'</div>';
     echo '<div class="review">', $row['review'] ,'</div>';
-    echo '<div class=""><input ';
+    echo '<button onclick="location.href=\'edit-in.php\'">編集';
+    echo '<button onclick="location.href=\'delete-in.php\'">削除';
     echo '</div>';
 }
 echo '</div>'
