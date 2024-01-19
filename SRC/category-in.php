@@ -9,6 +9,5 @@
 </form>
 
 <p><a href="insert-in.php">お店を登録する</a></p>
-<p><a href="top.php">トップページへ</a></p>
 
 <?php require 'footer.php'; ?>

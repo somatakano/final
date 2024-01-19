@@ -3,19 +3,19 @@
 <?php require 'db-connect.php'; ?>
 
 <form action="insert-out.php" method="post">
-    <p>店名
+    <div class="i-pub_name">店名
         <input type="text" name="name">
-    </p>
-    <p>住所
+    </div>
+    <div class="i-address">住所
         <input type="text" name="address">
-    </p>
-    <p>画像
-        <input type="file" name="image">
-    </p>
-    <p>行った日にち
+    </div>
+    <div class="i-image">画像
+        <input type="text" name="image">
+    </div>
+    <div class="i-visit">行った日にち
         <input type="date" name="date">
-    </p>
-    <p>カテゴリー
+    </div>
+    <div class="i-category">カテゴリー
         <?php
         $pdo = new PDO($connect , user , pass);
         echo '<select name="category">';
@@ -26,15 +26,14 @@
         echo '</select>';
         ?>
         <a href="category-in.php">カテゴリーを追加</a>
-    </p>
-    <p>おすすめの料理
+    </div>
+    <div class="i-food-name">おすすめの料理
         <input type="text" name="food">
-    </p>
+    </div>
     <!-- 感想 -->
-    <p><textarea name="review" placeholder="レビュー" cols="50" rows="4" maxlength="200"></textarea></p>
+    <div class="i-review"><textarea name="review" placeholder="レビュー" cols="50" rows="4" maxlength="200"></textarea></div>
 
-    <p><button type="submit">登録する</button></p>
-    <p><a href="top.php">トップページへ</a></p>
+    <div class="i-button"><button type="submit">登録する</button></div>
 </form>
 
 <?php require 'footer.php'; ?>
