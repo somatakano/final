@@ -3,6 +3,7 @@
 <?php require 'db-connect.php'; ?>
 
 <form action="insert-out.php" method="post">
+    <div class="i-block">
     <div class="i-pub_name">店名
         <input type="text" name="name">
     </div>
@@ -34,6 +35,7 @@
     <div class="i-review"><textarea name="review" placeholder="レビュー" cols="50" rows="4" maxlength="200"></textarea></div>
 
     <div class="i-button"><button type="submit">登録する</button></div>
+    </div>
 </form>
 
 <?php require 'footer.php'; ?>
